@@ -230,6 +230,26 @@ Responsabilidades:
 
 ---
 
+## Escenario: Generar una Orden de Compra
+
+### Flujo
+
+1. El Administrador selecciona un producto y un proveedor ya registrados.
+2. Indica la cantidad y confirma la generación de la orden.
+3. El Frontend envía la información al Backend.
+4. El Backend valida que el producto y el proveedor existan.
+5. El Backend almacena la orden de compra en PostgreSQL.
+6. El Backend almacena el detalle de la orden en PostgreSQL.
+7. PostgreSQL confirma el registro.
+8. El Backend responde al Frontend con la orden en estado "Pendiente".
+9. El Frontend informa que la orden fue registrada exitosamente.
+
+### Diagrama de Secuencia
+
+![Diagrama de Secuencia - Generar Orden de Compra](images/sequence_generate_order.png)
+
+---
+
 # Entity Relationship Model
 
 ## Modelo Entidad-Relación (MER)
